@@ -1,232 +1,277 @@
-⚡ CheCore v20.0 — ESP32 Wireless Security Engine
+<div align="center">
 
-«Scan. Simulate. Analyze. Defend.
-A real-time ESP32-based platform for wireless research, testing, and defensive security workflows.»
+# ⚡ CheCore v15 Ultimate
 
----
+### 🚀 Professional ESP32 Cybersecurity Research & Embedded Learning Platform
 
-🧠 What is CheCore?
-
-CheCore is a high-performance firmware designed to push the ESP32 to its limits for:
-
-- 📡 Wireless environment visibility
-- 📶 Protocol behavior simulation (lab use)
-- 🔵 BLE signal experimentation
-- 🪪 RFID interaction and logging
-- 🌐 On-device control via web interface
-
-Built with FreeRTOS + low-level WiFi control, optimized for stability, concurrency, and long runtime.
+<img src="https://img.shields.io/badge/Version-v15.0.0-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Platform-ESP32-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Language-Arduino-orange?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Open%20Source-Yes-red?style=for-the-badge"/>
 
 ---
 
-⚠️ Read Before Use
+### 🔥 Built for Learning • Research • Innovation
 
-This tool is for:
+**Designed & Developed by Lesslie Newbigin**
 
-- ✅ Authorized testing
-- ✅ Security research
-- ✅ Controlled lab environments
+Founder of **CYTRIXX**
 
-Never use on networks without permission.
-You are responsible for how you use this tool.
+*"Secure • Learn • Innovate"*
 
----
-
-🔥 Core Capabilities
-
-📡 WiFi Recon Engine
-
-- Fast network scanning with:
-  - SSID / BSSID
-  - RSSI
-  - Channel
-  - Encryption type
-- Snapshot system for stable data handling
-- Non-blocking scan architecture
+</div>
 
 ---
 
-📶 Beacon Simulation (Research Mode)
+# 📖 About CheCore
 
-- Custom SSID broadcasting
-- Randomized identity pool
-- Controlled transmission rate
-- Useful for:
-  - Network behavior analysis
-  - Client response testing
+CheCore v15 Ultimate is a next-generation **ESP32-based cybersecurity research platform** built for students, researchers, makers, and cybersecurity enthusiasts.
 
----
+It combines a modern OLED interface with modular firmware to provide an engaging environment for learning embedded systems, wireless networking concepts, and ESP32 development in authorized educational and laboratory settings.
 
-⚡ Frame Injection Engine (Lab Only)
-
-- Structured 802.11 frame transmission
-- Channel-aware execution
-- Sequence handling for realism
-- Designed for controlled experiments
+Whether you're exploring IoT hardware, experimenting with networking concepts, or building embedded security projects, CheCore provides a clean and extensible foundation.
 
 ---
 
-🔵 BLE Signal Module
+# ✨ Highlights
 
-- Continuous advertising (no instability)
-- Dynamic payload mutation
-- Multiple signal profiles
-- Safe update system (no stack crashes)
+✅ Modern OLED User Interface
 
----
+✅ Fast Boot Performance
 
-🪪 RFID System (MFRC522)
+✅ Interactive Menu Navigation
 
-- UID detection + logging
-- Card type identification
-- Duplicate filtering
-- Timestamped records
+✅ Wi-Fi Discovery & Network Information
 
----
+✅ Bluetooth Device Discovery
 
-🌐 Web Control Interface
+✅ Real-Time Status Display
 
-- Hosted directly on ESP32
-- Real-time control panel
-- JSON API endpoints
-- Captive portal behavior
+✅ Optimized Memory Management
+
+✅ Stable Embedded Architecture
+
+✅ Beginner Friendly
+
+✅ Open Source
 
 ---
 
-🛡️ Stability Engineering (What makes CheCore different)
+# 🎯 Project Goals
 
-This is NOT a basic script tool.
-
-✔ FreeRTOS Task Architecture
-
-- Dedicated tasks for each subsystem
-- Non-blocking, concurrent execution
-
-✔ Radio Ownership Layer
-
-- Prevents WiFi/BLE conflicts
-- Controlled access to low-level radio
-
-✔ Fail-Safe System
-
-- Heap monitoring
-- Auto recovery from stuck states
-- Scan timeout protection
-- Mode reset system
-
-✔ Watchdog Safe
-
-- No freeze loops
-- All tasks monitored
+* 🎓 Promote cybersecurity education
+* 🔬 Encourage embedded systems research
+* 📡 Explore wireless networking concepts
+* ⚙️ Learn ESP32 firmware development
+* 💡 Inspire innovation in IoT security
+* 🌍 Support the open-source community
 
 ---
 
-⚙️ Hardware
+# 🛠 Hardware Requirements
 
-- ESP32 Dev Board
-- MFRC522 RFID Module
-
----
-
-🔌 Wiring (RC522 → ESP32)
-
-RC522| ESP32
-SDA| GPIO 5
-SCK| GPIO 18
-MOSI| GPIO 23
-MISO| GPIO 19
-RST| GPIO 4
+| Component                 | Status   |
+| ------------------------- | -------- |
+| ✅ ESP32 Development Board | Required |
+| ✅ SSD1306 OLED Display    | Required |
+| ✅ Push Buttons            | Required |
+| ✅ USB Cable               | Required |
+| ✅ Arduino IDE             | Required |
 
 ---
 
-🚀 Getting Started
+# 🔌 OLED Connections
 
-ANDROID 
-1. INSTALL ESP32 FLASHER APP FROM ANY APP STORE 
-2. SELECT THE CORRECT OFFSET FILES
-     |
-     |
-     ————–
-           Bootloader-0x1000
-      Partition Table-0x8000
-         App Firmware-0x10000
-3. flash the esp32
-(in some esp32 we need to hold boot button till flashing complete)
+| OLED Pin | ESP32 Pin |
+| -------- | --------- |
+| VCC      | 3.3V      |
+| GND      | GND       |
+| SDA      | GPIO 21   |
+| SCL      | GPIO 22   |
 
 ---
 
-🌐 Access Panel
+# 📂 Project Structure
 
-- SSID: CheCore
-- Password: checore1
-- URL: http://192.168.4.1
-
----
-
-🧩 System Design
-
-Core Engine
-├── WiFi Scanner
-├── Beacon Module
-├── Frame Engine
-├── BLE Module
-├── RFID System
-└── Failsafe Controller
+```text
+CheCore_v15/
+│
+├── 📄 CheCore_v15.ino
+├── 📄 README.md
+├── 📄 LICENSE
+├── 📄 CHANGELOG.md
+├── 📄 CONTRIBUTING.md
+├── 📁 assets/
+└── 📁 images/
+```
 
 ---
 
-📊 Performance
+# 🚀 Getting Started
 
-- ⚡ Multi-tasking with FreeRTOS
-- 🔋 Efficient CPU usage
-- 🧠 Memory-safe design
-- ⏱ Stable long runtime (days)
+## 1️⃣ Install Arduino IDE
 
----
-
-🧪 Use Cases
-
-- Wireless lab experiments
-- Embedded systems learning
-- Security research (authorized)
-- Protocol analysis
+Download and install the latest Arduino IDE.
 
 ---
 
-🚧 Roadmap
+## 2️⃣ Install ESP32 Board Package
 
-- OLED display integration
-- Secure login system
-- Advanced logging
-- Mobile control app
+Install the official ESP32 board package from the Boards Manager.
 
 ---
 
-👤 Author
+## 3️⃣ Install Required Libraries
 
-Lesslie Newbigin
-ESP32 | Embedded Systems | Wireless Research
-
----
-
-⭐ Support
-
-If this project helps you:
-
-- ⭐ Star the repo
-- 🔧 Contribute
-- 📢 Share
+* Adafruit GFX
+* Adafruit SSD1306
 
 ---
 
-🧠 Philosophy
+## 4️⃣ Open the Project
 
-«Precision over noise
-Control over chaos
-Stability over hacks»
+Load `CheCore_v15.ino`.
 
 ---
 
-⚡ CheCore
+## 5️⃣ Select Your ESP32 Board
 
-Built to explore. Designed to stay stable.# lesslie-newbigin.github.io
+Choose the correct board and COM port.
+
+---
+
+## 6️⃣ Upload
+
+Compile and upload the firmware.
+
+---
+
+# 🌟 Features
+
+## 🖥 OLED Dashboard
+
+* 📊 Status Screen
+* 📜 Smooth Menus
+* 📡 Live Information
+* ⚡ Quick Navigation
+* 🎨 Clean UI
+
+---
+
+## 📶 Wireless Research
+
+* 📡 Network Discovery
+* 📍 Signal Strength
+* 📶 Channel Information
+* 🛰 BSSID Display
+
+---
+
+## 📲 Bluetooth
+
+* 🔍 Device Discovery
+* 📱 Device Information
+* 📶 Signal Monitoring
+
+---
+
+## ⚙️ System
+
+* 🚀 Optimized Firmware
+* 🧠 Efficient Memory Usage
+* 🔄 Stable Runtime
+* ⚡ Fast Startup
+* 🛡 Reliable Operation
+
+---
+
+# 📈 Roadmap
+
+* 🌐 Web Dashboard
+* 📱 Mobile Companion App
+* ☁ OTA Updates
+* 💾 SD Card Logging
+* 📍 GPS Support
+* 🎨 Advanced UI Animations
+* 🔋 Battery Monitoring
+* 🧩 Plugin Architecture
+* 📊 Performance Analytics
+* 🌙 Dark Theme
+
+---
+
+# 🤝 Contributing
+
+Contributions are always welcome!
+
+If you have ideas, improvements, or bug fixes:
+
+🍴 Fork the repository
+
+🌱 Create a feature branch
+
+💻 Commit your changes
+
+🚀 Submit a Pull Request
+
+---
+
+# 📚 Learning Focus
+
+CheCore encourages learning in:
+
+* 💻 Embedded Programming
+* 📡 Wireless Networking
+* 🔐 Cybersecurity Concepts
+* 🤖 IoT Development
+* ⚡ ESP32 Development
+* 🔬 Security Research
+
+---
+
+# ⚠ Disclaimer
+
+CheCore is intended **only** for education, research, and authorized security testing. Always obtain permission before interacting with networks or devices you do not own or administer. Users are responsible for complying with applicable laws and regulations.
+
+---
+
+# 👨‍💻 Developer
+
+## **Lesslie Newbigin**
+
+🚀 Cybersecurity Researcher
+
+💻 Embedded Systems Enthusiast
+
+🤖 AI & IoT Explorer
+
+🏢 Founder — **CYTRIXX**
+
+---
+
+# 🌟 Support
+
+If you like this project,
+
+⭐ Star the repository
+
+🍴 Fork it
+
+📢 Share it
+
+🤝 Contribute
+
+Your support helps the project grow!
+
+---
+
+<div align="center">
+
+# ⭐ Thank You for Visiting ⭐
+
+### ❤️ Happy Learning • Happy Building • Happy Researching ❤️
+
+**© 2026 CYTRIXX. All Rights Reserved.**
+
+</div>
