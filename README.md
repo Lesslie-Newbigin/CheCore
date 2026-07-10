@@ -1,3 +1,23 @@
+<p align="center">
+
+<img src="https://img.shields.io/github/stars/lesslie-newbigin/CheCore?style=for-the-badge&logo=github" />
+<img src="https://img.shields.io/github/forks/lesslie-newbigin/CheCore?style=for-the-badge&logo=github" />
+<img src="https://img.shields.io/github/issues/lesslie-newbigin/CheCore?style=for-the-badge&logo=github" />
+<img src="https://img.shields.io/github/license/lesslie-newbigin/CheCore?style=for-the-badge" />
+
+<br>
+
+<img src="https://img.shields.io/badge/Platform-ESP32-00979D?style=for-the-badge&logo=espressif&logoColor=white"/>
+<img src="https://img.shields.io/badge/Language-Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white"/>
+<img src="https://img.shields.io/badge/OLED-SSD1306-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Open%20Source-❤-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Made%20With-C++-00599C?style=for-the-badge&logo=cplusplus"/>
+
+</p>
+
+
+
+
 <div align="center">
 
 # ⚡ CheCore v15 Ultimate
